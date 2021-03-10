@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Tv Show App</title>
+  </head>
+  <body>
+   
+  <main class="search-box">
+  <h1 class="search-box__header">Tv Show Search</h1>
+  <form class="search-form">
+    <input class="search-form__input" type="text" placeholder="Tv Show Title" name="query">
+    <button class="search-form__btn" type="submit">Search</button>
+  </form>
+ </main> 
+
+ <section class="popup hidden">
+  <div class="show">
+    <span class="close-btn"> &times; </span>
+
+      <div class="left-side">
+      <div class="show__display">
+          <img class="show__img" src="" alt="show image">
+          
+          <div class="next">
+            <button class="btn-next">
+              Next
+            </button>            
+         </div> 
+      </div>
+    </div>
+
+      <div class="right-side">
+        <div class="show__details">
+          <p class="show__details--name"></p>
+          <p class="show__details--year"></p>
+          <p class="show__details--score"></p>
+          
+        </div>
+        <div class="show__description">
+          
+        </div>
+        <a href="" class="show__details--link">Click Here For More Info</a>
+    </div>
+ </div>
+</section>
+
+
+
+
+  <script src="app.js"></script>  
+  </body>
+</html>
+
